@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Magic ball</title>
+    <style>
+        * {
+            color: white;
+        }
+        button {
+            background: url(https://8-gund.com/assets/img/ball.png);
+            background-size: contain;
+            width: 350px;
+            height: 350px;
+            border: none;
+        }
+
+        button.active {
+        animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+        transform: translate3d(0, 0, 0);
+        backface-visibility: hidden;
+        perspective: 1000px;
+        }
+
+        @keyframes shake {
+        10%, 90% {
+            transform: translate3d(-1px, 0, 0);
+        }
+        
+        20%, 80% {
+            transform: translate3d(2px, 0, 0);
+        }
+
+        30%, 50%, 70% {
+            transform: translate3d(-4px, 0, 0);
+        }
+
+        40%, 60% {
+            transform: translate3d(4px, 0, 0);
+        }
+        }
+    </style>
+</head>
+<body>
+    <div class="ball">
+        <button class="result">Нажми на меня</button>
+    </div>
+ <script>
+        let max = 10;
+        let min = 1;
+        let phrase = {
+            1: "Посочувствовать важнее, чем помочь.",
+            2: "Не могу отказаться от спиртного, как рыба от воды.",
+            3: "Порядок придумали скучные люди.",
+            4: "Не откладывай на завтра то что можно сделать послезавтра.",
+            5: "Мало ли что я могу пообещать.",
+            6: "Работать в спешке - то же, что глотать не прожевывая.",
+            7: "Готов понять всех, только не себя.",
+            8: "Ива в бурю гнётся, а дуб валится.",
+            9: "Всем известно, что я вечно занят, но мало кто знает, чем именно.",
+            10: "Не давите на меня, а то ускользну, как рыба из рук."
+        }
+
+        window.onload = function () {
+            let element = document.getElementsByClassName("ball")[0];
+            element.addEventListener("click", function(e) {
+            magic();
+            }, false);
+        };
+        let magic = () => {
+            let id = Math.floor(Math.random() * (max - min + 1)) + min;
+            let x = document.getElementsByClassName("result")[0];
+            x.textContent = phrase[id];
+            x.classList.add("active");
+            setTimeout(function () {
+                x.classList.remove("active");
+            }, 820);
+            
+        }
+    </script>
+</body>
+
+</html>
