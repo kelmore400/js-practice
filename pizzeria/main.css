@@ -561,7 +561,6 @@ footer .copyright {
 .about {
   display: -ms-grid;
   display: grid;
-  height: 460px;
   -ms-grid-columns: 1fr 1fr;
       grid-template-columns: 1fr 1fr;
 }
