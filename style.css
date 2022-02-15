@@ -8,8 +8,11 @@ body {
     font-size: 12px;
     color: black;
 }
+header {
+    padding-top: 20px;
+}
 .container {
-    width: 780px;
+    width: 1200px;
     margin: 0 auto;
 }
 .logo {
@@ -48,16 +51,11 @@ nav a:hover {
 nav a:first-child {
     margin-left: 0;
 }
-h1 {
+h1, h2 {
     text-transform: uppercase;
     font-family: Verdana, sans-serif;
     font-size: 12px;
-}
-h2 {
-    text-transform: uppercase;
-    font-family: Verdana, sans-serif;
-    font-size: 12px;
-    text-align: center;
+    font-weight: 100;
 }
 hr {
     border: 0.5px solid #3cb04b;
@@ -68,16 +66,16 @@ hr {
     display: flex;
 }
 .main-top img {
-    height: 160px;
+    height: 240px;
 }
 .main-mid img {
-    height: 116px;
+    height: 175px;
 }
 .main-bot img{
-    height: 72px;
+    height: 110px;
 }
 .main-bot img:nth-child(3) {
-    width: 240px;
+    width: 290px;
 }
 footer {
     color: white;
