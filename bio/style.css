@@ -1,0 +1,122 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    color: #909090;
+}
+.container {
+    width: 930px;
+    margin: 0 auto;
+}
+header {
+    display: flex;
+    justify-content: flex-start;
+}
+.logo {
+    margin-right: 40px;
+    font-family: 'Rockwell', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #91d043;
+    text-transform: uppercase;
+    font-size: 60px;
+    text-decoration: none;
+}
+.logo span {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    vertical-align: super;
+    font-size: 30px;
+    color: #cfcfcf;
+    text-transform: lowercase;
+}
+nav {
+    width: 100%;
+    margin-top: 15px;
+    display: flex;
+    background-color: #91d043;
+    height: 30px;
+    align-items: center;
+}
+nav a {
+    color: white;
+    padding: 5px 20px;
+    display: inline-block;
+    text-decoration: none;
+    border-right: 1px solid white;
+    height: 30px;
+}
+nav a:hover {
+    color: grey;
+}
+nav a:last-child {
+    border: none;
+}
+.main-top {
+    display: flex;
+    margin-bottom: 12px;
+}
+figure {
+    position: relative;
+    margin: 0;
+}
+figcaption {
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    padding-left: 10px;
+    background-color: #95d14b;
+    color: white;
+    height: 20px;
+    width: 100%;
+    display: inline-block;
+    font-size: 16px;
+}
+h1, h2 {
+    font-size: 32px;
+    font-weight: 400;
+    line-height: 32px;
+    margin: 0;
+}
+.main-tx {
+    margin: 5px 20px 0 20px;
+    font-size: 18px;
+    font-weight: 100;
+}
+.main-tx p {
+    margin-top: 25px;
+}
+
+article img {
+    width: 218px;
+    height: 147px;
+}
+.main-bot {
+    margin-top: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+article {
+    width: 220px;
+    font-weight: 100;
+}
+h3 {
+    font-size: 18px;
+    font-weight: 400;
+    margin: 10px 0;
+}
+article a {
+    text-decoration: none;
+    color: black;
+}
+p {
+    margin-bottom: 0;
+}
+a span {
+    font-size: 30px;
+    font-weight: 400;
+    color: lightgrey;
+    vertical-align: sub;
+    letter-spacing: 6px;
+}
